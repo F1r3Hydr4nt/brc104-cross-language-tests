@@ -157,3 +157,44 @@ This fix ensures:
 - TypeScript clients can authenticate with Python servers
 - All SDKs maintain cryptographic compatibility
 - Cross-implementation BRC-104 authentication works correctly
+
+## Key Derivation Comparison Tests
+
+The `test_key_derivation.*` files test key derivation functions across all three languages to identify any implementation differences that could cause signature verification failures.
+
+### Running Key Derivation Tests
+
+**Individual tests:**
+```bash
+# Python
+python3 test_key_derivation.py
+
+# TypeScript
+npx ts-node test_key_derivation.ts
+
+# Go
+go run test_key_derivation_test.go constants.go
+```
+
+**Compare all languages:**
+```bash
+./compare_key_derivation.sh
+```
+
+### What the Tests Do
+
+The key derivation tests:
+1. Use identical root keys across all languages
+2. Derive keys with the same inputs (protocol, keyID, counterparty)
+3. Compare derived private keys
+4. Compare derived public keys (with `forSelf=True` and `forSelf=False`)
+5. Verify that public keys derived from private keys match `forSelf=True` results
+
+### Expected Results
+
+All three languages should produce:
+- **Identical private keys** when given the same inputs
+- **Identical public keys** for `forSelf=True` (should match public key from private key)
+- **Identical public keys** for `forSelf=False` (different from `forSelf=True`)
+
+If any differences are found, this indicates a bug in key derivation that could cause signature verification failures.
