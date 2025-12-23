@@ -1,5 +1,5 @@
 ================================================================================
-TYPESCRIPT KEY DERIVATION TEST
+GO KEY DERIVATION TEST
 ================================================================================
 Protocol: security_level=2, protocol='auth message signature'
 Key ID: 'QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI='
@@ -13,18 +13,18 @@ Derived Keys:
 
 JSON Output (for comparison):
 {
-  "language": "typescript",
+  "language": "go",
   "protocol": {
-    "security_level": 2,
-    "protocol": "auth message signature"
+    "protocol": "auth message signature",
+    "security_level": 2
   },
   "key_id": "QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=",
   "counterparty": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
   "results": {
-    "privateKeyHex": "26bbbb010eab5d1ae2666c851c145dcb45f5e926d63a8e81a153d2b6ed8ab2fc",
-    "publicKeyForSelfHex": "024467ed1ba7c9d46ad972fe31c090be264e8892c8d12dcb5441d7c0c307ad99dc",
-    "publicKeyNotForSelfHex": "02528a60dee9a4124298e5db896185abf248962487d1da43bf414f7e9948fa6ab3",
-    "publicKeyFromPrivateHex": "024467ed1ba7c9d46ad972fe31c090be264e8892c8d12dcb5441d7c0c307ad99dc"
+    "private_key_hex": "26bbbb010eab5d1ae2666c851c145dcb45f5e926d63a8e81a153d2b6ed8ab2fc",
+    "public_key_for_self_hex": "024467ed1ba7c9d46ad972fe31c090be264e8892c8d12dcb5441d7c0c307ad99dc",
+    "public_key_not_for_self_hex": "02528a60dee9a4124298e5db896185abf248962487d1da43bf414f7e9948fa6ab3",
+    "public_key_from_private_hex": "024467ed1ba7c9d46ad972fe31c090be264e8892c8d12dcb5441d7c0c307ad99dc"
   }
 }
 

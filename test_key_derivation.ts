@@ -99,7 +99,14 @@ function testKeyDerivation(): void {
 }
 
 // Run test if executed directly
-if (require.main === module) {
+// In ESM, check if this file is being run directly (not imported)
+import { fileURLToPath } from 'url';
+import { resolve } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const isMainModule = process.argv[1] && resolve(process.argv[1]) === __filename;
+
+if (isMainModule) {
   testKeyDerivation();
 }
 

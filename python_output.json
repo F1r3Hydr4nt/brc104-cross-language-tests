@@ -5,10 +5,64 @@ Protocol: security_level=2, protocol='auth message signature'
 Key ID: 'QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI='
 Counterparty: 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798
 
+[KeyDeriver.compute_invoice_number]
+  protocol.security_level: 2
+  protocol.protocol (raw): auth message signature
+  protocol_name (normalized): auth message signature
+  key_id: QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+  invoice_number: 2-auth message signature-QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+[KeyDeriver._branch_scalar]
+  invoice_number=2-auth message signature-QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+  cp_pub.hex=0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798
+  root_pub.hex=03006f54f86a07f22ac6934a61e5a2bf0da03ce1cd6e6f978bfd064a37d0e1a111
+  shared_secret_len=33
+  shared_secret_hex=03006f54f86a07f22ac6934a61e5a2bf0da03ce1cd6e6f978bfd064a37d0e1a111
+  invoice_number_bin=322d61757468206d657373616765207369676e61747572652d515546425155464251554642515546425155464251554642515546425155464251554642515546425155453d20516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b493d
+  branch_hex=573fe0e2d3882fcc06e34c6f15cb2eddea422717d6b2ecf063921912b961ca18
+  scalar=573fe0e2d3882fcc06e34c6f15cb2eddea422717d6b2ecf063921912b961ca18
+[KeyDeriver.compute_invoice_number]
+  protocol.security_level: 2
+  protocol.protocol (raw): auth message signature
+  protocol_name (normalized): auth message signature
+  key_id: QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+  invoice_number: 2-auth message signature-QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+[KeyDeriver._branch_scalar]
+  invoice_number=2-auth message signature-QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+  cp_pub.hex=0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798
+  root_pub.hex=03006f54f86a07f22ac6934a61e5a2bf0da03ce1cd6e6f978bfd064a37d0e1a111
+  shared_secret_len=33
+  shared_secret_hex=03006f54f86a07f22ac6934a61e5a2bf0da03ce1cd6e6f978bfd064a37d0e1a111
+  invoice_number_bin=322d61757468206d657373616765207369676e61747572652d515546425155464251554642515546425155464251554642515546425155464251554642515546425155453d20516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b493d
+  branch_hex=573fe0e2d3882fcc06e34c6f15cb2eddea422717d6b2ecf063921912b961ca18
+  scalar=573fe0e2d3882fcc06e34c6f15cb2eddea422717d6b2ecf063921912b961ca18
+[KeyDeriver.compute_invoice_number]
+  protocol.security_level: 2
+  protocol.protocol (raw): auth message signature
+  protocol_name (normalized): auth message signature
+  key_id: QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+  invoice_number: 2-auth message signature-QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+[KeyDeriver.derive_public_key] forSelf=False
+  protocol: 2-auth message signature
+  key_id: QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+  invoice_number: 2-auth message signature-QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+  counterparty type: 3
+  counterparty pub: 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798
+  root pub: 03006f54f86a07f22ac6934a61e5a2bf0da03ce1cd6e6f978bfd064a37d0e1a111
+[KeyDeriver._branch_scalar]
+  invoice_number=2-auth message signature-QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE= QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+  cp_pub.hex=0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798
+  root_pub.hex=03006f54f86a07f22ac6934a61e5a2bf0da03ce1cd6e6f978bfd064a37d0e1a111
+  shared_secret_len=33
+  shared_secret_hex=03006f54f86a07f22ac6934a61e5a2bf0da03ce1cd6e6f978bfd064a37d0e1a111
+  invoice_number_bin=322d61757468206d657373616765207369676e61747572652d515546425155464251554642515546425155464251554642515546425155464251554642515546425155453d20516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b4a43516b493d
+  branch_hex=573fe0e2d3882fcc06e34c6f15cb2eddea422717d6b2ecf063921912b961ca18
+  scalar=573fe0e2d3882fcc06e34c6f15cb2eddea422717d6b2ecf063921912b961ca18
+  delta (scalar): 573fe0e2d3882fcc06e34c6f15cb2eddea422717d6b2ecf063921912b961ca18
+  derived pub: 02528a60dee9a4124298e5db896185abf248962487d1da43bf414f7e9948fa6ab3
 Derived Keys:
   Private Key (hex): 26bbbb010eab5d1ae2666c851c145dcb45f5e926d63a8e81a153d2b6ed8ab2fc
   Public Key (from private): 024467ed1ba7c9d46ad972fe31c090be264e8892c8d12dcb5441d7c0c307ad99dc
-  Public Key (forSelf=True): 02e0a7c5cde04b4404e7036b1c564a6b26bcc5f00802622c24864ad883a8efbccb
+  Public Key (forSelf=True): 024467ed1ba7c9d46ad972fe31c090be264e8892c8d12dcb5441d7c0c307ad99dc
   Public Key (forSelf=False): 02528a60dee9a4124298e5db896185abf248962487d1da43bf414f7e9948fa6ab3
 
 JSON Output (for comparison):
@@ -22,13 +76,13 @@ JSON Output (for comparison):
   "counterparty": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
   "results": {
     "private_key_hex": "26bbbb010eab5d1ae2666c851c145dcb45f5e926d63a8e81a153d2b6ed8ab2fc",
-    "public_key_for_self_hex": "02e0a7c5cde04b4404e7036b1c564a6b26bcc5f00802622c24864ad883a8efbccb",
+    "public_key_for_self_hex": "024467ed1ba7c9d46ad972fe31c090be264e8892c8d12dcb5441d7c0c307ad99dc",
     "public_key_not_for_self_hex": "02528a60dee9a4124298e5db896185abf248962487d1da43bf414f7e9948fa6ab3",
     "public_key_from_private_hex": "024467ed1ba7c9d46ad972fe31c090be264e8892c8d12dcb5441d7c0c307ad99dc"
   }
 }
 
 Consistency Checks:
-  Public key from private matches forSelf=True: False
+  Public key from private matches forSelf=True: True
   Public key from private matches forSelf=False: False
 

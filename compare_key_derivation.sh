@@ -22,7 +22,8 @@ python3 test_key_derivation.py > python_output.json 2>&1 || {
 # Run TypeScript test
 echo "Running TypeScript test..."
 cd "$SCRIPT_DIR"
-npx ts-node test_key_derivation.ts > typescript_output.json 2>&1 || {
+# Use tsx for ESM support (handles TypeScript + ESM natively)
+npx tsx test_key_derivation.ts > typescript_output.json 2>&1 || {
     echo "ERROR: TypeScript test failed"
     cat typescript_output.json
     exit 1
@@ -31,7 +32,7 @@ npx ts-node test_key_derivation.ts > typescript_output.json 2>&1 || {
 # Run Go test
 echo "Running Go test..."
 cd "$SCRIPT_DIR"
-go run test_key_derivation_test.go constants.go > go_output.json 2>&1 || {
+go run test_key_derivation.go constants.go > go_output.json 2>&1 || {
     echo "ERROR: Go test failed"
     cat go_output.json
     exit 1

@@ -1,0 +1,26 @@
+=== RUN   TestBRC104SignatureDataPreparation
+=== RUN   TestBRC104SignatureDataPreparation/signature_data_preparation_matches_reference_implementation
+=== RUN   TestBRC104SignatureDataPreparation/verification_data_preparation_uses_reversed_order
+--- PASS: TestBRC104SignatureDataPreparation (0.00s)
+    --- PASS: TestBRC104SignatureDataPreparation/signature_data_preparation_matches_reference_implementation (0.00s)
+    --- PASS: TestBRC104SignatureDataPreparation/verification_data_preparation_uses_reversed_order (0.00s)
+=== RUN   TestBRC104Constants
+=== RUN   TestBRC104Constants/constants_are_properly_defined
+=== RUN   TestBRC104Constants/protocol_ID_is_correct
+=== RUN   TestBRC104Constants/key_ID_format_is_correct
+--- PASS: TestBRC104Constants (0.00s)
+    --- PASS: TestBRC104Constants/constants_are_properly_defined (0.00s)
+    --- PASS: TestBRC104Constants/protocol_ID_is_correct (0.00s)
+    --- PASS: TestBRC104Constants/key_ID_format_is_correct (0.00s)
+=== RUN   TestBRC104NonceDecoding
+=== RUN   TestBRC104NonceDecoding/nonces_decode_correctly
+--- PASS: TestBRC104NonceDecoding (0.00s)
+    --- PASS: TestBRC104NonceDecoding/nonces_decode_correctly (0.00s)
+=== RUN   TestBRC104Integration
+=== RUN   TestBRC104Integration/initial_response_signature_flow
+=== RUN   TestBRC104Integration/initial_response_verification_flow
+--- PASS: TestBRC104Integration (0.00s)
+    --- PASS: TestBRC104Integration/initial_response_signature_flow (0.00s)
+    --- PASS: TestBRC104Integration/initial_response_verification_flow (0.00s)
+PASS
+ok  	cross-language-tests	0.005s

@@ -1,0 +1,23 @@
+/home/sneakyfox/.local/lib/python3.12/site-packages/pytest_asyncio/plugin.py:252: PytestDeprecationWarning: The configuration option "asyncio_default_fixture_loop_scope" is unset.
+The event loop scope for asynchronous fixtures will default to the fixture caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to function scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are: "function", "class", "module", "package", "session"
+
+  warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/sneakyfox/py-lib/cross-language-tests
+plugins: cov-7.0.0, cocotb-test-0.2.6, asyncio-1.2.0, django-4.11.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 9 items
+
+test_brc104_signatures.py::TestBRC104SignatureDataPreparation::test_signature_data_preparation_matches_go_sdk PASSED [ 11%]
+test_brc104_signatures.py::TestBRC104SignatureDataPreparation::test_verification_data_preparation_order PASSED [ 22%]
+test_brc104_signatures.py::TestBRC104SignatureGeneration::test_signature_data_logic_is_correct PASSED [ 33%]
+test_brc104_signatures.py::TestBRC104SignatureGeneration::test_verification_data_logic_is_correct PASSED [ 44%]
+test_brc104_signatures.py::TestBRC104CrossVerification::test_expected_signature_data_format PASSED [ 55%]
+test_brc104_signatures.py::TestBRC104CrossVerification::test_nonce_decoding_correctness PASSED [ 66%]
+test_brc104_signatures.py::TestBRC104CrossVerification::test_key_id_format PASSED [ 77%]
+test_brc104_signatures.py::TestBRC104Integration::test_initial_response_signature_flow PASSED [ 88%]
+test_brc104_signatures.py::TestBRC104Integration::test_initial_response_verification_flow PASSED [100%]
+
+============================== 9 passed in 0.02s ===============================

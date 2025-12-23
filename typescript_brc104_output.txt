@@ -1,0 +1,23 @@
+ts-jest[config] (WARN) [94mmessage[0m[90m TS151001: [0mIf you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+PASS ./test_brc104_signatures.ts
+  BRC-104 Signature Data Preparation
+    Cross-Language Compatibility Verification
+      ✓ should produce identical signature data to Go SDK (FIXED) (3 ms)
+      ✓ should produce identical verification data to Go SDK (1 ms)
+      ✓ should demonstrate what the bug looked like (for historical reference)
+  BRC-104 Signature Generation
+    ✓ should create signature with test data (2 ms)
+    ✓ should verify signature roundtrip (1 ms)
+  BRC-104 Cross-Language Compatibility
+    ✓ should have identical constants across languages (1 ms)
+    ✓ should decode nonces correctly (1 ms)
+    ✓ should format key IDs correctly
+  BRC-104 Integration Tests
+    ✓ should simulate initial response signature flow (1 ms)
+    ✓ should simulate initial response verification flow (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       10 passed, 10 total
+Snapshots:   0 total
+Time:        1.562 s, estimated 2 s
+Ran all test suites matching /test_brc104_signatures.ts/i.
